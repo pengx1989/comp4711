@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title>Admin Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="admin.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body id ="adminBody">
+
+<div class="container">
+	
+	<p id = "alert"> </p>
+	<form action="/action_page.php">
+	Questions Text<br>
+	<div class = "diffcultyQ">
+	<input type="radio" name="diffculty" value="easy" id = "diffculty1" class = "dbutton"> Easy
+	<input type="radio" name="diffculty" value="hard" id = "diffculty2" class = "dbutton"> Hard
+	</div>
+	
+	<textarea rows="5" cols="80" id="questiontext"></textarea> <br>
+	
+	Answer<br>
+	<input type="radio" name="question" value="q1" id = "r1" class = "rbutton"> <input type="text" name="q1" id = "q1"> <br>
+	<input type="radio" name="question" value="q2" id = "r2" class = "rbutton"> <input type="text" name="q2" id = "q2"> <br>
+	<input type="radio" name="question" value="q3" id = "r3" class = "rbutton"> <input type="text" name="q3" id = "q3"> <br>
+	<input type="radio" name="question" value="q4" id = "r4" class = "rbutton"> <input type="text" name="q4" id = "q4">
+	
+	</form>
+	<div id="btns">
+	<button type="button" class="btn btn-warning" id = "addBtn" onclick = "addQuestion()">Add</button>
+	<button type="button" class="btn btn-warning" id = "saveBtn" onclick = "saveQuestion()">Save</button>
+	</div>
+	<ul class="question_list">
+	
+	</ul>	
+</div>
+<script src="model/model.js"></script>
+<script src="view/view.js"></script>
+<script src="controller/controller.js"></script>
+</body>
+</html>

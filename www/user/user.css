@@ -1,0 +1,59 @@
+h1 {
+	font-size: 200%;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
+.select_area {
+	text-align:center;
+}
+
+.qBody {
+	margin-left: 20%;
+	margin-bottom:10%;
+}
+
+#submit {
+	margin-left: 20%;
+	margin-bottom: 10%;
+	float:left;
+
+}
+
+#statText {
+	float:right;
+	margin-right: 30%;
+
+}
+
+#quiz_text {
+	font-size: 300%;
+	font-weight: bold;
+	color: white;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: black;
+}
+
+#userBody {
+	background-color: #B7E7FF;
+}
+
+.correct {
+	font-size: 150%;
+	color: #14FF0F;
+}
+
+.wrong {
+	font-size: 150%;
+	color: #FF3903;
+}
+
+#finalScore {
+	font-size: 200%;
+}
+

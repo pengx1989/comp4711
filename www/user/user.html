@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="user.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body id ="userBody">
+<div>
+	<h1 id = "quiz_title"> Quiz </h1>
+	<div id ="EasyOrHard" class = "select_area">
+	<button type="button" class="btn btn-default" id="ebutton" onclick = "requestDataEasy()">Easy</button>
+	<button type="button" class="btn btn-default" id="hbutton" onclick = "requestDataHard()">Hard</button>
+	<div id = "quizText">
+	<label id = "quiz_text"></label>
+	</div>
+	</div>
+	
+	<div id="quiz_question" class ="quiz_area">
+
+	
+	</div>
+	
+	<div id = "submit" class = "submit_area">
+	
+	</div>
+	<div id = "statText">
+	<label id = "finalScore"></label>
+	</div>
+
+	
+</div>
+<script src="model/model.js"></script>
+<script src="view/view.js"></script>
+<script src="controller/controller.js"></script>
+</body>
+</html>
